@@ -10,6 +10,7 @@
 :root {
     --black: #111111;
     --white: #d8d3c7;
+    --whiteSheet: #f7f6f2;
     --brown: #4F3824;
     --shadow: #1b1b1b6e;
 }
@@ -47,7 +48,7 @@ div.nav {
     justify-content: space-between;
     align-items: center;
 
-    width: 21rem;
+    width: 25rem;
     margin-right: 4rem;
 }
 
@@ -75,6 +76,7 @@ header > h1 {
 }
 
 header > p {
+    text-shadow: .2rem .2rem .3rem var(--shadow);
     font-family: 'Noto Sans', sans-serif;
     font-weight: 500;
     font-size: 2rem;
@@ -90,25 +92,24 @@ main {
     box-shadow: 0rem -.2rem 1.5rem var(--shadow);
 }
 
-section.light {
+section.content0 {
     display: flex;
     flex-direction: row;
 
     width: 80%;
     padding: 1rem;
-    height: 100%;
 
-    background-color: #f7f6f2;
+    background-color: var(--whiteSheet);
     box-shadow: 0px 0px 10px var(--shadow);
 }
 
-aside.light > img {
+aside.content0 > img {
     box-shadow: 7px 7px 4px var(--shadow);
     margin-right: 1rem;
     width: 15rem;
 }
 
-article.light > h1 {
+article.content0 > h1 {
     text-shadow: 3px 3px 2px var(--shadow);
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -144,16 +145,27 @@ img.fotos {
     width: 10rem;
 }
 
+section.content1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    padding: 1rem;
+
+    background-color: var(--whiteSheet);
+    box-shadow: 0px 0px 10px var(--shadow);
+}
+
 ::-webkit-scrollbar {
     width: .6rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #eff0d18a;
+    background-color: #eff0d1a4;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #eff0d1de
+    background-color: #979795de
 }
 
 ::-webkit-scrollbar-track {
