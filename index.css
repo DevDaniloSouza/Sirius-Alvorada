@@ -9,10 +9,11 @@
 
 :root {
     --black: #111111;
-    --white: #d8d3c7;
+    --white: #e0dcd3;
     --whiteSheet: #f7f6f2;
-    --brown: #4F3824;
-    --shadow: #1b1b1b6e;
+    --shadow-image-orange: #db5400;
+    --shadow-image-blue: #0061a1;
+    --shadow: #1b1b1b69;
 }
 
 body {
@@ -20,6 +21,12 @@ body {
     height: 100vh;
 
     background-color: var(--white);
+}
+
+p {
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1.4rem;
 }
 
 nav {
@@ -61,7 +68,7 @@ header {
     width: 100%;
     height: 100%;
 
-    background-image: url(images/lenço\ dbv.jpg);
+    background-image: url(images/header.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -71,8 +78,9 @@ header {
 }
 
 header > h1 {
-    font-family: 'Noto Sans', sans-serif;;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 5rem;
+    color: #000;
     text-shadow: 0rem 0rem .8rem #151515c4;
 }
 
@@ -95,25 +103,61 @@ main {
 
 section.content0 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    width: 80%;
-    padding: 1rem;
+    width: 82%;
+    padding: .8rem 2rem 1rem 2rem;
 
     background-color: var(--whiteSheet);
-    box-shadow: 0px 0px 10px var(--shadow);
+    box-shadow: 0rem 0rem .8rem var(--shadow);
 }
 
-aside.content0 > img {
-    box-shadow: 7px 7px 4px var(--shadow);
-    margin-right: 1rem;
-    width: 15rem;
-}
+section.content0 > h1 {
+    margin-bottom: 1.2rem;
 
-article.content0 > h1 {
-    text-shadow: 3px 3px 2px var(--shadow);
-    margin-bottom: 1rem;
     font-size: 3rem;
+    text-align: center;
+    text-shadow: 3px 3px 2px var(--shadow);
+}
+
+article.dbv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 2.8rem;
+}
+
+article.dbv > img {
+    box-shadow: .8rem .8rem var(--black);
+    width: 27rem;
+    margin-right: 1rem;
+}
+
+article.dbv > div {
+    padding: 1rem;
+}
+
+article.us {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+aside > img {
+    width: 27rem;
+    margin-left: 2rem;
+
+    box-shadow: -.8rem .8rem var(--black);
+}
+
+article.us > div > h1 {
+    margin-bottom: 1rem;
+
+    font-size: 2.6rem;
+    text-shadow: 3px 3px 2px var(--shadow);
 }
 
 section.dark {
@@ -129,8 +173,13 @@ section.dark {
 }
 
 section.dark > h1 {
-    margin: 1.5rem 0rem 2rem 0rem;
-    font-size: 2.2rem;
+    text-align: center;
+    margin: 2rem 0rem 3rem 0rem;
+    font-size: 2.4rem;
+}
+
+article.dark > p {
+    color: var(--white);
 }
 
 div#container {
@@ -138,12 +187,29 @@ div#container {
     flex-direction: row;
     justify-content: space-between;
 
-    width: 70%;
-    margin-bottom: 2rem;
+    width: 68%;
+    margin-bottom: 3rem;
 }
 
 img.fotos {
+    justify-self: center;
     width: 10rem;
+}
+
+div#container {
+    text-align: center;
+}
+
+article.dark {
+    max-width: 15rem;
+}
+
+article.dark > img {
+    margin-bottom: .8rem;
+}
+
+article.dark > h2 {
+    margin-bottom: .8rem;
 }
 
 section.content1 {
@@ -179,11 +245,6 @@ article.toLeft > img {
 article.toLeft > div > h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-}
-
-article.toLeft > div > p {
-    line-height: 1.4rem;
-    font-size: 1.1rem;
 }
 
 ::-webkit-scrollbar {
