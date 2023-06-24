@@ -250,7 +250,7 @@ article.toRight {
     display: flex;
     flex-direction: row-reverse;
 
-    margin-bottom: 2rem;
+    margin-bottom: 2.6rem;
 }
 
 article.toRight > img {
@@ -262,6 +262,53 @@ article.toRight > img {
 article.toRight > div > h2 {
     margin-bottom: 1rem;
     font-size: 2.3rem;
+}
+
+article.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+h2#title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+article.boxes > div {
+    max-width: 20rem;
+}
+
+section.dark02 {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: var(--black);
+
+    color: var(--white);
+}
+
+.dark02 > article > h1 {
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.dark02 > article > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 80%;
+}
+
+.dark02 > article > div > p {
+    color: var(--white);
 }
 
 ::-webkit-scrollbar {
