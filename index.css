@@ -293,6 +293,16 @@ section.dark02 {
     color: var(--white);
 }
 
+.dark02 > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 .dark02 > article > h1 {
     margin: 2rem 0rem 2rem 0rem;
     font-size: 2.4rem;
@@ -303,8 +313,14 @@ section.dark02 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-self: center;
 
     width: 80%;
+}
+
+.qrcode {
+    margin-right: 2rem;
+    width: 20rem;
 }
 
 .dark02 > article > div > p {
