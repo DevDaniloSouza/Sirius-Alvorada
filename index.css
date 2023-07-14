@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
 
 * {
-    font-family: 'Geologica', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -21,12 +20,18 @@ body {
     height: 100vh;
 
     background-color: var(--white);
+
+    font-family: 'Geologica', sans-serif;
 }
 
 p {
     color: var(--black);
     font-weight: 400;
     line-height: 1.4rem;
+}
+
+p#title {
+    color: var(--whiteSheet);
 }
 
 nav {
@@ -52,7 +57,9 @@ img.d1 {
 }
 
 .mark {
+    position: absolute;
     margin: 0 0 0 .5rem;
+    font-weight: 500;
 }
 
 div.nav {
@@ -61,7 +68,7 @@ div.nav {
     justify-content: space-between;
     align-items: center;
 
-    width: 30rem;
+    width: 25rem;
     margin-right: 1rem;
 }
 
